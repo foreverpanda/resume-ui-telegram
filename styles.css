@@ -1,0 +1,315 @@
+
+:root {
+    --primary-color: #f1b602;
+    --secondary-color: white;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100vw;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background-color: #f1b602;
+    border: none;
+    padding: 1.2vw 2vw;
+    color: #fff;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0a500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    background-color: white ;
+    height: 5vw;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: teal;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.resume-checker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    margin-top: 5vw;
+}
+.checker-image{
+    background-color: #e9f3f3;
+    border-radius: 1vw;
+    
+}
+
+.resume-checker h1 {
+    font-size: 36px;
+}
+
+.resume-checker p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.checker-text {
+    max-width: 500px;
+}
+
+.checker-image img {
+    width: 50vw;
+}
+
+
+/* Resume Insights Section */
+.resume-insights {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--background-light);
+}
+
+.resume-insights h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.insight-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-bottom: 2vw;
+}
+
+.insight-box {
+    padding: 20px;
+    border: 1px solid #eee;
+    width: 15vw;
+    background-color: var(--background-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insight-box h3 {
+    color: var(--primary-color);
+}
+.in-img{
+    width: 100%;
+}
+
+
+
+.insight-box h3 {
+    color: #f1b602;
+}
+.accordion-section {
+    padding: 50px;
+    background-color: #f8f9fb;
+    max-width: 800px;
+    margin: 2vw auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.accordion-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+    background-color: #f1b602;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+    background-color: #e0a500;
+}
+
+/* opening animation */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* accordion  active */
+.accordion-item.active .accordion-content {
+    max-height: 500px; 
+    padding: 15px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.3s ease;
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-content p, .accordion-content ul {
+    margin: 10px 0;
+}
+
+
+
+
+/* Is Your Resume in Good Standing Section */
+.resume-standing {
+    background-color: #005149;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    height: 85vh;
+
+    font-family: 'Roboto';
+}
+
+
+.standing-white{
+    margin: 1vw 0vw;
+    background-color: white;
+    padding: 1vw 4vw;
+    border-radius: 3vw;
+    width: 60vw;
+    height: 37vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+}
+
+
+
+.resume-standing-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+
+}
+
+
+
+.resume-standing h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.standing-text {
+
+    width: 50%;
+    color: black;
+}
+
+.standing-text ul {
+    list-style-type:disc;
+    text-align: left;
+
+}
+
+
+.standing-image {
+    background-color: #e9f3f3;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.standing-image img{
+    width: 350px;
+}
+
+
+
+
+/* Footer  sEXTION*/
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
